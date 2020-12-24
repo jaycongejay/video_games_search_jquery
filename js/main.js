@@ -42,6 +42,7 @@ $(document).ready(function() {
             gameNameList.push({id : i, name: gameList[i].name});
         };
 
+
         showSearchResult();
         clearSearchResult();
     });
@@ -49,6 +50,7 @@ $(document).ready(function() {
     
 }); // end of document ready
 
+window.getGameId = getGameId;
 
 function getGameId(id){
     console.log(id);
