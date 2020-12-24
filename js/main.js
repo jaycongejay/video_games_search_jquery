@@ -7,8 +7,6 @@ var searchResultList = [];
 $(document).ready(function() {
     console.log("in jsonOut");
 
-    console.log(GAME_API_KEY)
-	
 	const settings = {
         "async": true,
         "crossDomain": true,
