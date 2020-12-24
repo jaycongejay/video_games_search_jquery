@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script src="js//thegame.js"></script>
+    <link rel="stylesheet" href="style/theGame.css">
+    <script>
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <div class="top">
+            <div id="header"></div>
+            <div class="head_video"></div>
+        </div>
+        <div class="slide_preview"></div>
+        <div class="theGame_detail">
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Name</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="gname" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Genres</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="genres" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Platform</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="platform" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Rating</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="rating" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Playtime</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="playtime" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Released</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="released" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Updated</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="updated" class="content">
+                </div>
+            </div>
+            <div class="game_detail_row">
+                <div class="name">
+                    <strong>Stores</strong>
+                </div>
+                <div class="icon">
+                    <img src="data/images/Line.png" height="30px" alt="">
+                </div>
+                <div id="stores" class="content">
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <div id="footer"></div>
+</body>
+</html>

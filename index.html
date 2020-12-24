@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Search</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <link rel="stylesheet" href="style/index.css">
+    <script>
+        $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <div class="home_background">
+            <div class="shadow_cover">
+                <div id="header"></div>
+                <div class="search_bar">
+                    <div class="search_txt">
+                        <label for="search"><img src="data/images/search_icon.png" width="30px" alt="searcgIcon">Search for...</label>
+                    </div>
+                    <div>
+                        <input id="search" type="text">
+                        <div class="search_result"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="controller_img">
+                <img src="data/images/controller_img.png" alt="">
+            </div>
+        </div>
+        <section id="content">
+            <div id="cityList"></div>
+        </section>
+        <div class="toTop" style="text-align: center;">
+            <a href="#">
+                <img src="data/images/upArrowIcon.png"  width="30px" alt="upArrow">
+            </a>
+        </div>
+    </main>
+    <hr>
+    <div id="footer"></div>
+</body>
+</html>

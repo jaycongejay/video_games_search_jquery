@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+#header{
+    padding: 20px;
+}
+.home_background{
+    background: url('../data/images/MainPage.png');
+    height: 70vh;
+}
+main{
+    background-color: #2C2C2C;
+}
+.shadow_cover{
+    background-color: #2c2c2c91;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+}
+.controller_img{
+    padding-top: 261px;
+    text-align: center;
+}
+.search_bar{
+    text-align: center;
+    padding-top: 96px;
+    display: flex;
+    justify-content: center;
+}
+.search_result{
+    position: absolute;
+    color: white;
+    text-align: left;
+    background-color: #2C2C2C;
+    border: 1px solid #E92C2C;
+}
+.search_result h3{
+    padding: 10px;
+    font-size: 15px;
+}
+#search{
+    padding: 14px;
+    border-radius: 0 6px 6px 0;
+}
+.search_txt{
+    color: white;
+    background: #E92C2C;
+    border-radius: 6px 0 0 6px;
+    padding: 5px;
+}
+#footer{
+    background-color: #2C2C2C;
+    color: white;
+    padding: 36px;
+}
+#footer ul{
+    text-align: right;
+    padding-right: 30px;
+}
+#footer li{
+    display: inline-block;
+    padding: 5px;
+}
+#content{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+#cityList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
