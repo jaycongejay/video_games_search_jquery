@@ -101,7 +101,10 @@ main{
     color: white;
     background-color: #E92C2C;
 }
-
+.list-group-item:hover{
+    cursor: pointer;
+    color: #E92C2C;
+}
 
 @media only screen and (max-width: 974px){
 
