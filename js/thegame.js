@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 
    $(".head_video").html(`
-        <video src="${theGame.clip.clips["full"]}" width="100%" controls></video>
+        <video src="${theGame.clip.clips["full"]}" width="100%" controls autoplay></video>
    `)
 
    shortScreenshots = theGame.short_screenshots;

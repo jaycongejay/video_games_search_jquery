@@ -25,15 +25,15 @@ main{
     margin: 0 auto;
 }
 .theGame_detail{
-   padding: 100px 0;
+   margin: 0 160px;
+   padding: 50px 0;
 }
 .slide_preview{
     text-align: center;
 }
 .game_detail_row{
-    display: flex;
-    justify-content: left;
-    padding-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 15fr;
 }
 .game_detail_row .name{
     padding-top: 13px;
@@ -60,4 +60,37 @@ main{
 #footer li{
     display: inline-block;
     padding: 5px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .game_detail_row{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas:
+            'name .'
+            'icon content';
+    }
+
+    .name{
+        grid-area: name;
+    }
+    .icon{
+        grid-area: icon;
+    }
+    .content{
+        grid-area: content;
+    }
+
+    .theGame_detail{
+        margin: 0 93px;
+     }
+}
+
+@media only screen and (max-width: 400px){
+
+
+    .theGame_detail{
+        margin: 0 16px;
+     }
 }

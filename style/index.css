@@ -10,6 +10,9 @@ a{
 li{
     list-style: none;
 }
+hr{
+    margin: 0;
+}
 #header{
     padding: 20px;
 }
@@ -41,11 +44,17 @@ main{
     color: white;
     text-align: left;
     background-color: #2C2C2C;
-    border: 1px solid #E92C2C;
+    width: 100%;
+    color: black;
+    top: 150px;
 }
 .search_result h3{
     padding: 10px;
     font-size: 15px;
+}
+.input-group-text{
+    background-color: #E92C2C;
+    color: white;
 }
 #search{
     padding: 14px;
@@ -80,4 +89,34 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+}
+.toTop{
+    padding: 5px 0;
+}
+.card{
+    margin: 0 auto;
+}
+.see_more_btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #E92C2C;
+}
+
+
+@media only screen and (max-width: 974px){
+
+    #cityList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 648px){
+
+    #cityList{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }

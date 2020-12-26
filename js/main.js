@@ -22,18 +22,19 @@ $(document).ready(function() {
 
         gameList = response.results;
 
+        console.log(gameList)
+
         // Display all games
         $("#cityList").html("");
         for(let i = 0; i < gameList.length; i++) {
             
             $("#cityList").append(
                 `
-                <div class="game" id="${i}" onclick="getGameId(${i})">
-                    <div>
-                        <img src="${gameList[i].background_image}" width="100%" height="150px">
-                    </div>
-                    <div style="color: white; background-color: #2C2C2C; padding: 10px">
-                        <h3>${gameList[i].name}</h3>
+                <div class="card" id="${i}" onclick="getGameId(${i})" style="width: 18rem;">
+                    <img src="${gameList[i].background_image}" height="150px" class="card-img-top" alt="${gameList[i].name}">
+                    <div class="card-body bg-dark text-white">
+                        <h6 class="card-title">${gameList[i].name}</h6>
+                        <button id="${i}" onclick="getGameId(${i})" class="btn btn-light btn-sm see_more_btn" style="width: 100%; margin-top: 10px">See more</button>
                     </div>
                 </div>
                 `
@@ -72,7 +73,9 @@ function showSearchResult() {
         if(e.target.value !== ""){
             searchResultList.forEach(g => {
                 $(".search_result").append(`
-                    <h3 id="${g.id}" onclick="getGameId(${g.id})">${g.name}</h3>
+                    <h3 class="list-group-item" id="${g.id}" onclick="getGameId(${g.id})">
+                        <img src="data/images/search_icon2.png" alt="search icon" width="30px" style="color: #E92C2C; padding-right: 10px">${g.name}
+                    </h3>
                 `);
             })
         }
