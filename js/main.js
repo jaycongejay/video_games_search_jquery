@@ -31,7 +31,7 @@ $(document).ready(function() {
             $("#cityList").append(
                 `
                 <div class="card" id="${i}" onclick="getGameId(${i})" style="width: 18rem;">
-                    <img src="${gameList[i].background_image}" height="150px" class="card-img-top" alt="${gameList[i].name}">
+                    <img src="${gameList[i].background_image}" width="286px" height="150px" class="card-img-top" alt="${gameList[i].name}">
                     <div class="card-body bg-dark text-white">
                         <h6 class="card-title">${gameList[i].name}</h6>
                         <button id="${i}" onclick="getGameId(${i})" class="btn btn-light btn-sm see_more_btn" style="width: 100%; margin-top: 10px">See more</button>
